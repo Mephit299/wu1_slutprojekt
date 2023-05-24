@@ -15,6 +15,13 @@ const upgradesTracker = document.querySelector('#upgrades');
 const upgradeList = document.querySelector('#upgradelist');
 const msgbox = document.querySelector('#msgbox');
 const audioAchievement = document.querySelector('#swoosh');
+const center = document.querySelector('#center')
+const memeClicker = document.querySelector('#MemeClicker')
+const centertext = document.querySelector('#centertext')
+const imagegrid = document.querySelector('#imagegrid')
+const sidebar2 = document.querySelector('#sidebar2')
+const sidebar1 = document.querySelector('#sidebar1')
+const fintext = document.querySelector('#fintext')
 
 /* Följande variabler använder vi för att hålla reda på hur mycket pengar som
  * spelaren, har och tjänar.
@@ -163,43 +170,55 @@ window.addEventListener('load', (event) => {
  */
 upgrades = [
     {
-        name: 'Sop',
+        name: 'Bot',
         cost: 10,
         amount: 1,
     },
     {
-        name: 'Kvalitetsspade',
+        name: 'Keybord',
         cost: 50,
         clicks: 2,
     },
     {
-        name: 'Skottkärra',
+        name: 'Bot troupe.',
         cost: 100,
         amount: 10,
     },
     {
-        name: 'Grävmaskin',
-        cost: 1000,
+        name: 'Better memage',
+        cost: 600,
+        clicks: 10,
+    },
+    {
+        name: 'Bot army',
+        cost: 1337,
         amount: 100,
     },
     {
-        name: 'Grävmaskin',
-        cost: 1000,
-        amount: 100,
+        name: 'Software',
+        cost: 2500,
+        clicks: 69,
     },
     {
-        name: 'Grävmaskin',
-        cost: 1000,
-        amount: 100,
-    },
-    {
-        name: 'Grävmaskin',
-        cost: 1000,
-        amount: 100,
+        name: 'Discord server',
+        cost: 6900,
+        amount: 420,
     },{
-        name: 'Grävmaskin',
-        cost: 1000,
-        amount: 100,
+        name: 'Discord mod',
+        cost: 10000,
+        clicks: 150,
+    },{
+        name: 'Viral memes',
+        cost: 20000,
+        amount: 2000,
+    },{
+        name: 'Master memer',
+        cost: 999999,
+        clicks: 2000,
+    },{
+        name: ';)',
+        cost: 9999999,
+        Funny: 1,
     },
 
 ];
@@ -230,13 +249,24 @@ function createCard(upgrade) {
     const cost = document.createElement('p');
     if (upgrade.amount) {
         header.textContent = `${upgrade.name}, +${upgrade.amount} per sekund.`;
-    } else {
+    }else if (upgrade.Funny){
+        header.textContent = `${upgrade.name}`;
+    }else {
         header.textContent = `${upgrade.name}, +${upgrade.clicks} per klick.`;
     }
     cost.textContent = `Köp för ${upgrade.cost} MEMES.`;
 
     card.addEventListener('click', (e) => {
-        if (money >= upgrade.cost) {
+        if (upgrade.Funny){
+            center.appendChild(memeClicker);
+            sidebar1.appendChild(imagegrid);
+            sidebar2.appendChild(centertext);
+            fintext.classList.remove("container");
+            document.getElementById("nedreBild").src = "../images/keritMeme.webp";
+            document.getElementById("aboveBild").src = "../images/RainworldFunny.gif"
+            
+
+        } else if (money >= upgrade.cost) {
             acquiredUpgrades++;
             money -= upgrade.cost;
             upgrade.cost *= 1.5;

@@ -32,6 +32,12 @@ h1 {
     font-weight: 700;
     max-width: 20ch;
 }
+h2 {
+    font-size: var(--step-2);
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width: 20ch;
+}
 
 /* göm audio, används för att preloada ljudet */
 audio {
@@ -39,7 +45,7 @@ audio {
 }
 
 .container {
-    width: min(80ch, 100vw - var(--space-l-xl));
+    width: min(60ch, 100vw - var(--space-l-xl));
     margin-inline: auto;
 }
 
@@ -263,9 +269,11 @@ audio {
     background-color: #002147;
     height: 100%;
     color: aliceblue;
-    max-width: 500ch;
+    min-width: 400px;
+    max-width: 500px;
     display: flex;
     justify-content: right;
+    
 }
 
 aside>img{
@@ -295,8 +303,15 @@ aside>figure{
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     gap: 0.5rem;
-    padding-bottom: 1.3ch;
+    padding-left: 0ch;
+    padding-bottom: 3.35ch;
 }
-footer>figure>img{
-    object-fit: cover;
+div>ul{
+    list-style: none;
+}
+footer>img{
+    width: 100%;
+    max-width: 100%;
+    margin: 0ch;
+    padding: 0ch;
 }
