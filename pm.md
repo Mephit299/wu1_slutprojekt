@@ -15,11 +15,11 @@ Det finns en header med lite text som förklarar vad hemsidan är. En sidebar ti
 ### Clicker
 Jag kan börja med min clicker. Basen för den är bara koden och elementen för clickern som vi fick när vi skulle göra uppgiften att göra en clicker. För att det lät roligt ligger clicker också i en sidebar. Sidebar css är tagit från CV uppgiften för vi fick sidebarkod som funkade att använda för den uppgiften. Jag tog alla huvudelemnt för clickern och lade dom i en aside (för sidebar) och det funkade. Sen valde jag temat memes för clicker för jag tar redan den här uppgiften so oseriöst så varför inte.
 
-### Bidgaleri
+### Bildgaleri
 Till höger finns det en till sidebar som inehåller bilder på mina katter. Sidebarkoden för den här delen är sjusterad så att istället för att liga till vänster ligger den åt höger. Bilderna är länkar som går att klicka på som i den tidigare gjorda bilgaleri uppgiften.
 
 ### Centerad layout
-I centrum av hemsidan finns det text. Vad det är för text är antagligen det här PM texten om jag har tid. Det är en enkel cnetread layout. 
+I centrum av hemsidan finns det text. Det är det här PM-et som jag har skrivit för Jens gave mig iden av att de kunde liga här. Texten är bara en enkel centererad layout som vi har gjort många gånger tidigare i kursen.
 
 ### ;) uppgraderingen
 Den här uppgraderingen ändrar var sakerna på hemisdan befinner sig so min header blir min footer och min footer blir min header. Clickern flytas till centrum, bildgaleriet flyttas till vänster sida och texten i minten flytas till högre sidebar. För att göra det här har jag lagt en div runt clickern, bildegaleriet och texten. Jag använder sen DOM för att flyta runt div elementen och dess inehåll till andra platser så att inehållet på sidebarsen och centrum blir annat.

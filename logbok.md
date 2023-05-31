@@ -11,3 +11,4 @@
 ## 2023-05-31
 * Skrivit ett PM.
 * Finsjusteringar till hämsidan.
+* Ändrat texten i centum av hemsidan till mitt PM.
