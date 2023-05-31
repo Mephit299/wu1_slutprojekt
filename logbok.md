@@ -7,3 +7,7 @@
 * Gjort så att klickern faktist har ett tema och har en unik effekt. 
 * Bråkat med layouten så att hemsidan ser ut som jag vill.
 * Gjort så att alla bilder faktiskt går någonstan och inte ger ett error om man trycker på dom.
+
+## 2023-05-31
+* Skrivit ett PM.
+* Finsjusteringar till hämsidan.
