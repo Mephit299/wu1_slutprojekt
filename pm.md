@@ -37,5 +37,5 @@ Den här uppgraderingen ändrar var sakerna på hemisdan befinner sig so min hea
 
 ## Sammanfattning
 
-Här redovisar du dina slutsatser, erfarenheter och lärdomar. Reflektera över din produkt och dess/dina utvecklingsmöjligheter.
-Vad kan vidareutvecklas och finns det utrymme att bygga vidare på projektet.
+Det var ett roligt och intresant projekt som jag gillade att arbeta med och jag fick avstämma att jag hade lärt ming något och kan det vi skulle lära os under året. Hemsidan kan deffinativs förbätras med att för tillfälet går 3 av bilderna ingenstans utan dom laddar bara om hemsidan och texten består av lorem men allting funkar och är på den plast som jag vill att de ska vara på.
+
